@@ -34,7 +34,7 @@ class Task:
                         buffer=response.json()
                         buffer=buffer["data"]
                         buffer=buffer["card"]
-                        self.message_dict.setdefault(key,[]).append([message.format(**buffer),uid[1]])
+                        self.message_dict.setdefault(key,[]).append([message.format(**buffer),uid[1],""])
                     print("++++++++++++++++++")
                 except Exception as e:
                     print(e)
